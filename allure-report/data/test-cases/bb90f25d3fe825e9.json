@@ -1,0 +1,124 @@
+{
+  "uid" : "bb90f25d3fe825e9",
+  "name" : "test_create_account_with_mandatory_fields",
+  "fullName" : "tests.test_Register.TestRegister#test_create_account_with_mandatory_fields",
+  "historyId" : "e4694a4a7d7326efc85637916a647168",
+  "time" : {
+    "start" : 1696536263604,
+    "stop" : 1696536266698,
+    "duration" : 3094
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 4 were given",
+  "statusTrace" : "self = <test_Register.TestRegister object at 0x000001FE0BE9D450>\n\n    def test_create_account_with_mandatory_fields(self):\n        home_page = HomePage(self.driver)\n        rester_page = home_page.navigate_to_register_page()\n        home_page = HomePage(self.driver)\n        register_page = home_page.navigate_to_register_page()\n>       account_page = register_page.register_an_account(\"soumya\", \"mohanty\", \"demoauto@gmail.com\",\n                                                         \"9090874537\", \"soumya\", \"soumya\", \"yes\", \"select\")\n\ntests\\test_Register.py:12: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npageobjects\\RegisterPage.py:65: in register_an_account\n    self.radio_button_yes()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <pageobjects.RegisterPage.RegisterPage object at 0x000001FE0C26FA50>\n\n    def radio_button_yes(self):\n>       self.driver.find_element(By.XPATH,\"newsletter_radio_button_yes_xpath\",self.newsletter_radio_button_yes_xpath)\nE       TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 4 were given\n\npageobjects\\RegisterPage.py:42: TypeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "log_on_failure",
+    "time" : {
+      "start" : 1696536263604,
+      "stop" : 1696536263604,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup_and_teardown",
+    "time" : {
+      "start" : 1696536259610,
+      "stop" : 1696536263604,
+      "duration" : 3994
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "log_on_failure::0",
+    "time" : {
+      "start" : 1696536266727,
+      "stop" : 1696536267067,
+      "duration" : 340
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "24a0183276fd0c53",
+      "name" : "failed_test",
+      "source" : "24a0183276fd0c53.png",
+      "type" : "image/png",
+      "size" : 100707
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  }, {
+    "name" : "setup_and_teardown::0",
+    "time" : {
+      "start" : 1696536267073,
+      "stop" : 1696536272198,
+      "duration" : 5125
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_Register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "soumya"
+  }, {
+    "name" : "thread",
+    "value" : "31016-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')" ]
+  },
+  "source" : "bb90f25d3fe825e9.json",
+  "parameterValues" : [ ]
+}

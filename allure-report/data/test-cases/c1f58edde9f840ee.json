@@ -1,0 +1,157 @@
+{
+  "uid" : "c1f58edde9f840ee",
+  "name" : "test_search_for_valid_product",
+  "fullName" : "tests.test_Search.TestSearch#test_search_for_valid_product",
+  "historyId" : "bf7bd581249341774a126a9e6199e783",
+  "time" : {
+    "start" : 1696537098550,
+    "stop" : 1696537099195,
+    "duration" : 645
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'",
+  "statusTrace" : "self = <test_Search.TestSearch object at 0x000002937DABEBD0>\n\n    def test_search_for_valid_product(self):\n        home_page = HomePage(self.driver)\n        search_page = home_page.search_for_a_product(\"HP\")\n>       assert search_page.display_status_of_valid_product()\n\ntests\\test_Search.py:9: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npageobjects\\SearchPage.py:13: in display_status_of_valid_product\n    return self.check_display_status_of_element(\"valid_hp_product_linkext\",self.valid_hp_product_linkext)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <pageobjects.SearchPage.SearchPage object at 0x000002937E2CC990>\nlocator_name = 'valid_hp_product_linkext', locator_value = 'HP LP3065'\n\n    def check_display_status_of_element(self, locator_name, locator_value):\n        element = self.get_element(locator_name, locator_value)\n>       return element.is_displayed()\nE       AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\npageobjects\\BasePage.py:21: AttributeError",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "log_on_failure",
+    "time" : {
+      "start" : 1696537098548,
+      "stop" : 1696537098548,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup_and_teardown",
+    "time" : {
+      "start" : 1696537095426,
+      "stop" : 1696537098546,
+      "duration" : 3120
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "log_on_failure::0",
+    "time" : {
+      "start" : 1696537099200,
+      "stop" : 1696537099357,
+      "duration" : 157
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3d2aa2d5e206612",
+      "name" : "failed_test",
+      "source" : "3d2aa2d5e206612.png",
+      "type" : "image/png",
+      "size" : 117199
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  }, {
+    "name" : "setup_and_teardown::0",
+    "time" : {
+      "start" : 1696537099357,
+      "stop" : 1696537104515,
+      "duration" : 5158
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_Search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearch"
+  }, {
+    "name" : "host",
+    "value" : "soumya"
+  }, {
+    "name" : "thread",
+    "value" : "8692-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d870af3658fecb0a",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'",
+      "time" : {
+        "start" : 1696536305798,
+        "stop" : 1696536306473,
+        "duration" : 675
+      }
+    }, {
+      "uid" : "98c969a2eb41d45c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'",
+      "time" : {
+        "start" : 1696536116803,
+        "stop" : 1696536117521,
+        "duration" : 718
+      }
+    }, {
+      "uid" : "16910f1453e346a5",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'",
+      "time" : {
+        "start" : 1696501038077,
+        "stop" : 1696501039397,
+        "duration" : 1320
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')" ]
+  },
+  "source" : "c1f58edde9f840ee.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,113 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: Service C:\\Users\\itzme\\.cache\\selenium\\chromedriver\\win64\\117.0.5938.149\\chromedriver.exe unexpectedly exited. Status code was: 3221225794",
+      "children" : [ {
+        "name" : "test_login_with_valid_credentials[soumya@gmail.com-soumya123]",
+        "uid" : "f087ba0b580bb740",
+        "parentUid" : "2e128897be753b80e7763b5d6e744462",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696533411492,
+          "stop" : 1696533411492,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "'soumya@gmail.com'", "'soumya123'" ]
+      } ],
+      "uid" : "2e128897be753b80e7763b5d6e744462"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Edit your account information\"}\n  (Session info: chrome=117.0.5938.134); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n\tGetHandleVerifier [0x00007FF6FEBE7D12+55474]\n\t(No symbol) [0x00007FF6FEB577C2]\n\t(No symbol) [0x00007FF6FEA0E0EB]\n\t(No symbol) [0x00007FF6FEA4EBAC]\n\t(No symbol) [0x00007FF6FEA4ED2C]\n\t(No symbol) [0x00007FF6FEA89F77]\n\t(No symbol) [0x00007FF6FEA6F19F]\n\t(No symbol) [0x00007FF6FEA87EF2]\n\t(No symbol) [0x00007FF6FEA6EF33]\n\t(No symbol) [0x00007FF6FEA43D41]\n\t(No symbol) [0x00007FF6FEA44F84]\n\tGetHandleVerifier [0x00007FF6FEF4B762+3609346]\n\tGetHandleVerifier [0x00007FF6FEFA1A80+3962400]\n\tGetHandleVerifier [0x00007FF6FEF99F0F+3930799]\n\tGetHandleVerifier [0x00007FF6FEC83CA6+694342]\n\t(No symbol) [0x00007FF6FEB62218]\n\t(No symbol) [0x00007FF6FEB5E484]\n\t(No symbol) [0x00007FF6FEB5E5B2]\n\t(No symbol) [0x00007FF6FEB4EE13]\n\tBaseThreadInitThunk [0x00007FFE0F7D257D+29]\n\tRtlUserThreadStart [0x00007FFE1012AA78+40]",
+      "children" : [ {
+        "name" : "test_login_with_valid_credentials[soumya@gmail.com-soumya123]",
+        "uid" : "5ef7e151f4b6b472",
+        "parentUid" : "3c256e88788d9a4a3cc8526d605b2835",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696537000251,
+          "stop" : 1696537001587,
+          "duration" : 1336
+        },
+        "flaky" : true,
+        "parameters" : [ "'soumya@gmail.com'", "'soumya123'" ]
+      }, {
+        "name" : "test_login_with_valid_credentials[demoauto@gmail.com-soumya]",
+        "uid" : "d4ccad82df8859ac",
+        "parentUid" : "3c256e88788d9a4a3cc8526d605b2835",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696537010910,
+          "stop" : 1696537012121,
+          "duration" : 1211
+        },
+        "flaky" : true,
+        "parameters" : [ "'demoauto@gmail.com'", "'soumya'" ]
+      } ],
+      "uid" : "3c256e88788d9a4a3cc8526d605b2835"
+    }, {
+      "name" : "TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 4 were given",
+      "children" : [ {
+        "name" : "test_create_account_with_mandatory_fields",
+        "uid" : "736c8b7343a087d7",
+        "parentUid" : "c2632b434908d27728782236892f35be",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696537058446,
+          "stop" : 1696537060078,
+          "duration" : 1632
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_account_with_duplicate_email",
+        "uid" : "daf15a443ea00c1d",
+        "parentUid" : "c2632b434908d27728782236892f35be",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696537077809,
+          "stop" : 1696537079552,
+          "duration" : 1743
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c2632b434908d27728782236892f35be"
+    }, {
+      "name" : "AttributeError: 'TestRegister' object has no attribute 'generate_email_time_stamp'",
+      "children" : [ {
+        "name" : "test_create_account_with_all_fields",
+        "uid" : "690e152ecc0780ef",
+        "parentUid" : "5aa6b7c06cae5c0a47c6cc7f59446b94",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696537068308,
+          "stop" : 1696537069236,
+          "duration" : 928
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5aa6b7c06cae5c0a47c6cc7f59446b94"
+    }, {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'is_displayed'",
+      "children" : [ {
+        "name" : "test_search_for_valid_product",
+        "uid" : "c1f58edde9f840ee",
+        "parentUid" : "6caed0d51272f8a17d686ca3e111376b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1696537098550,
+          "stop" : 1696537099195,
+          "duration" : 645
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6caed0d51272f8a17d686ca3e111376b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
