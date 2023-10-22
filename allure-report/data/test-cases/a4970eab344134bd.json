@@ -1,0 +1,118 @@
+{
+  "uid" : "a4970eab344134bd",
+  "name" : "test_login_with_valid_credentials[soumya@gmail.com-soumya123]",
+  "fullName" : "tests.test_Login.TestLogin#test_login_with_valid_credentials",
+  "time" : {
+    "start" : 1696533411492,
+    "stop" : 1696533411492,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: Service C:\\Users\\itzme\\.cache\\selenium\\chromedriver\\win64\\117.0.5938.149\\chromedriver.exe unexpectedly exited. Status code was: 3221225794",
+  "statusTrace" : "request = <SubRequest 'setup_and_teardown' for <Function test_login_with_valid_credentials[soumya@gmail.com-soumya123]>>\n\n    @pytest.fixture()\n    def setup_and_teardown(request):\n        browser = ReadConfigurations.read_configuration(\"basic info\", \"browser\")\n        global driver\n        driver = None\n        if browser.__eq__(\"chrome\"):\n>           driver = webdriver.Chrome()\n\ntests\\conftest.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\..\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\chrome\\webdriver.py:45: in __init__\n    super().__init__(\n..\\..\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py:53: in __init__\n    self.service.start()\n..\\..\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\common\\service.py:102: in start\n    self.assert_process_still_running()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.chrome.service.Service object at 0x000001DA43B76290>\n\n    def assert_process_still_running(self) -> None:\n        \"\"\"Check if the underlying process is still running.\"\"\"\n        return_code = self.process.poll()\n        if return_code:\n>           raise WebDriverException(f\"Service {self._path} unexpectedly exited. Status code was: {return_code}\")\nE           selenium.common.exceptions.WebDriverException: Message: Service C:\\Users\\itzme\\.cache\\selenium\\chromedriver\\win64\\117.0.5938.149\\chromedriver.exe unexpectedly exited. Status code was: 3221225794\n\n..\\..\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\common\\service.py:115: WebDriverException",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1696533399587,
+      "stop" : 1696533399587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "pytestconfig",
+    "time" : {
+      "start" : 1696533399587,
+      "stop" : 1696533399587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "delete_output_dir",
+    "time" : {
+      "start" : 1696533399587,
+      "stop" : 1696533399587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup_and_teardown",
+    "time" : {
+      "start" : 1696533411493,
+      "stop" : 1696533414305,
+      "duration" : 2812
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: Service C:\\Users\\itzme\\.cache\\selenium\\chromedriver\\win64\\117.0.5938.149\\chromedriver.exe unexpectedly exited. Status code was: 3221225794\n\n",
+    "statusTrace" : "  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pluggy\\_callers.py\", line 137, in _multicall\n    teardown.throw(outcome._exception)\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\_pytest\\setuponly.py\", line 36, in pytest_fixture_setup\n    return (yield)\n            ^^^^^\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pluggy\\_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\_pytest\\fixtures.py\", line 1147, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\_pytest\\fixtures.py\", line 914, in call_fixture_func\n    fixture_result = next(generator)\n                     ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\itzme\\PycharmProjects\\SeleniumHybridFramework\\tests\\conftest.py\", line 32, in setup_and_teardown\n    driver = webdriver.Chrome()\n             ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\chrome\\webdriver.py\", line 45, in __init__\n    super().__init__(\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py\", line 53, in __init__\n    self.service.start()\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 102, in start\n    self.assert_process_still_running()\n  File \"C:\\Users\\itzme\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 115, in assert_process_still_running\n    raise WebDriverException(f\"Service {self._path} unexpectedly exited. Status code was: {return_code}\")\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1696533399586,
+      "stop" : 1696533399586,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "email_address",
+    "value" : "'soumya@gmail.com'"
+  }, {
+    "name" : "password",
+    "value" : "'soumya123'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a4970eab344134bd.json",
+  "parameterValues" : [ "'soumya@gmail.com'", "'soumya123'" ]
+}

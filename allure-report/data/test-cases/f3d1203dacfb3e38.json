@@ -1,0 +1,184 @@
+{
+  "uid" : "f3d1203dacfb3e38",
+  "name" : "test_create_account_with_mandatory_fields",
+  "fullName" : "tests.test_Register.TestRegister#test_create_account_with_mandatory_fields",
+  "historyId" : "e4694a4a7d7326efc85637916a647168",
+  "time" : {
+    "start" : 1696500963585,
+    "stop" : 1696500966116,
+    "duration" : 2531
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 4 were given",
+  "statusTrace" : "self = <test_Register.TestRegister object at 0x0000014331DFA650>\n\n    def test_create_account_with_mandatory_fields(self):\n        home_page = HomePage(self.driver)\n        rester_page = home_page.navigate_to_register_page()\n        home_page = HomePage(self.driver)\n        register_page = home_page.navigate_to_register_page()\n>       account_page = register_page.register_an_account(\"soumya\", \"mohanty\", \"demoauto@gmail.com\",\n                                                         \"9090874537\", \"soumya\", \"soumya\", \"yes\", \"select\")\n\ntests\\test_Register.py:12: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npageobjects\\RegisterPage.py:65: in register_an_account\n    self.radio_button_yes()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <pageobjects.RegisterPage.RegisterPage object at 0x0000014331AF81D0>\n\n    def radio_button_yes(self):\n>       self.driver.find_element(By.XPATH,\"newsletter_radio_button_yes_xpath\",self.newsletter_radio_button_yes_xpath)\nE       TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 4 were given\n\npageobjects\\RegisterPage.py:42: TypeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "pytestconfig",
+    "time" : {
+      "start" : 1696500848426,
+      "stop" : 1696500848426,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup_and_teardown",
+    "time" : {
+      "start" : 1696500952770,
+      "stop" : 1696500963584,
+      "duration" : 10814
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1696500848426,
+      "stop" : 1696500848426,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "delete_output_dir",
+    "time" : {
+      "start" : 1696500848426,
+      "stop" : 1696500848426,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1696500848425,
+      "stop" : 1696500848425,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "log_on_failure",
+    "time" : {
+      "start" : 1696500963584,
+      "stop" : 1696500963584,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "setup_and_teardown::0",
+    "time" : {
+      "start" : 1696500966284,
+      "stop" : 1696500971410,
+      "duration" : 5126
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "log_on_failure::0",
+    "time" : {
+      "start" : 1696500966123,
+      "stop" : 1696500966283,
+      "duration" : 160
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6721f279bb5f4b2e",
+      "name" : "failed_test",
+      "source" : "6721f279bb5f4b2e.png",
+      "type" : "image/png",
+      "size" : 99805
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_Register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "soumya"
+  }, {
+    "name" : "thread",
+    "value" : "26140-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')" ]
+  },
+  "source" : "f3d1203dacfb3e38.json",
+  "parameterValues" : [ ]
+}

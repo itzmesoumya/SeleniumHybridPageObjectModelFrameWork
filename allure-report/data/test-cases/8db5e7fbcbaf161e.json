@@ -1,0 +1,178 @@
+{
+  "uid" : "8db5e7fbcbaf161e",
+  "name" : "test_create_account_with_all_fields",
+  "fullName" : "tests.test_Register.TestRegister#test_create_account_with_all_fields",
+  "historyId" : "6aa897a1ab3bb6a855ce328b2ee3a377",
+  "time" : {
+    "start" : 1696537068308,
+    "stop" : 1696537069236,
+    "duration" : 928
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'TestRegister' object has no attribute 'generate_email_time_stamp'",
+  "statusTrace" : "self = <test_Register.TestRegister object at 0x000002937DD7D590>\n\n    def test_create_account_with_all_fields(self):\n        home_page = HomePage(self.driver)\n        register_page = home_page.navigate_to_register_page()\n        home_page = HomePage(self.driver)\n        register_page = home_page.navigate_to_register_page()\n>       account_page = register_page.register_an_account(\"soumya\", \"mohanty\", self.generate_email_time_stamp(),\n                                                         \"9090874537\", \"soumya\", \"soumya\", \"yes\", \"select\")\nE       AttributeError: 'TestRegister' object has no attribute 'generate_email_time_stamp'\n\ntests\\test_Register.py:31: AttributeError",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "log_on_failure",
+    "time" : {
+      "start" : 1696537068307,
+      "stop" : 1696537068307,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup_and_teardown",
+    "time" : {
+      "start" : 1696537065411,
+      "stop" : 1696537068307,
+      "duration" : 2896
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "log_on_failure::0",
+    "time" : {
+      "start" : 1696537069241,
+      "stop" : 1696537069385,
+      "duration" : 144
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "308859179bfaf82c",
+      "name" : "failed_test",
+      "source" : "308859179bfaf82c.png",
+      "type" : "image/png",
+      "size" : 104888
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup_and_teardown::0",
+    "time" : {
+      "start" : 1696537069385,
+      "stop" : 1696537074527,
+      "duration" : 5142
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_Register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "soumya"
+  }, {
+    "name" : "thread",
+    "value" : "8692-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "62f151a2e7091ad2",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TestRegister' object has no attribute 'generate_email_time_stamp'",
+      "time" : {
+        "start" : 1696536275920,
+        "stop" : 1696536276966,
+        "duration" : 1046
+      }
+    }, {
+      "uid" : "2fa7eac1ccb47673",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TestRegister' object has no attribute 'generate_email_time_stamp'",
+      "time" : {
+        "start" : 1696536087440,
+        "stop" : 1696536088443,
+        "duration" : 1003
+      }
+    }, {
+      "uid" : "8c703a4e6512c4dc",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TestRegister' object has no attribute 'generate_email_time_stamp'",
+      "time" : {
+        "start" : 1696500983230,
+        "stop" : 1696500985209,
+        "duration" : 1979
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "690e152ecc0780ef",
+        "reportUrl" : "http://localhost:9090/job/EcomHybrid/12/allure/#testresult/690e152ecc0780ef",
+        "status" : "broken",
+        "statusDetails" : "AttributeError: 'TestRegister' object has no attribute 'generate_email_time_stamp'",
+        "time" : {
+          "start" : 1696537068308,
+          "stop" : 1696537069236,
+          "duration" : 928
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')" ]
+  },
+  "source" : "8db5e7fbcbaf161e.json",
+  "parameterValues" : [ ]
+}

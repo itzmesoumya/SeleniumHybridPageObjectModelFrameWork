@@ -1,0 +1,17 @@
+[ {
+  "buildOrder" : 13,
+  "reportUrl" : "http://localhost:9090/job/EcomHybrid/13/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 14,
+    "retry" : 40
+  }
+}, {
+  "buildOrder" : 12,
+  "reportUrl" : "http://localhost:9090/job/EcomHybrid/12/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 14,
+    "retry" : 40
+  }
+} ]
