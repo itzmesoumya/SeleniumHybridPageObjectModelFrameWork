@@ -1,8 +1,0 @@
-[ {
-  "buildOrder" : 12,
-  "reportUrl" : "http://localhost:9090/job/EcomHybrid/12/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Test defects" : 7
-  }
-} ]

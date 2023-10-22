@@ -8,6 +8,7 @@
           <option value="tests.test_Login.TestLogin.*" />
           <option value="tests.test_Register.TestRegister.*" />
           <option value="tests.test_Search.TestSearch.*" />
+          <option value="utilities.ReadConfigurations.*" />
         </list>
       </option>
     </inspection_tool>
